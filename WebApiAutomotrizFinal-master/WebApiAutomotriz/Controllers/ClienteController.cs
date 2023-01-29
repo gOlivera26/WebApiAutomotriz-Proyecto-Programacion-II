@@ -50,7 +50,7 @@ namespace WebApiAutomotriz.Controllers
                 bool result = oServicio.CrearCliente(c);
                 return Ok(result);
             }
-            return BadRequest("Parametro vehiculo requerido");
+            return BadRequest("Parametro requerido");
 
         }
 

@@ -43,7 +43,7 @@ namespace AutomotrizBackend.Datos.Implementaciones
                 {
 
                     SqlCommand cmdDetalle = new SqlCommand("SP_Insertar_Detalle", cnn, t);
-                    //DEBO ESTAR INSERTANDO 0 EN VEHICULOS, REVISAR EL INSERT Y DONDE TERMINA EL ID
+                    
                     cmdDetalle.CommandType = CommandType.StoredProcedure;
 
                     cmdDetalle.Parameters.AddWithValue("@nro_factura", nroFactura);
