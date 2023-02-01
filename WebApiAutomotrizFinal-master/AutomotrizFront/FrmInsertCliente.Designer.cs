@@ -232,7 +232,7 @@
             this.cboTipo.FormattingEnabled = true;
             this.cboTipo.Location = new System.Drawing.Point(198, 63);
             this.cboTipo.Name = "cboTipo";
-            this.cboTipo.Size = new System.Drawing.Size(289, 28);
+            this.cboTipo.Size = new System.Drawing.Size(318, 28);
             this.cboTipo.TabIndex = 64;
             this.cboTipo.SelectedIndexChanged += new System.EventHandler(this.cboTipo_SelectedIndexChanged);
             // 
@@ -246,7 +246,7 @@
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Location = new System.Drawing.Point(40, 111);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(633, 187);
+            this.groupBox1.Size = new System.Drawing.Size(536, 187);
             this.groupBox1.TabIndex = 65;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Personales: ";
