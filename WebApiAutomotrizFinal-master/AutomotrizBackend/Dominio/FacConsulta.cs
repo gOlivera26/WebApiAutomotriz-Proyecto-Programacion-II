@@ -26,8 +26,11 @@ namespace AutomotrizBackend.Dominio
         }
         public FacConsulta(int NroF, DateTime f, int IdFEntrega, int IdFPago, int IdClient, int IdVend)
         {
-           
-        
+
+            Detalles = new List<DetallesFacturas>();
+            IdFormaEntrega = new FormaEntrega();
+            IdFormaPago = new FormasPago();
+            IdCliente = new Cliente();
         }
 
         public void AgregarDetalle(DetallesFacturas detalle)

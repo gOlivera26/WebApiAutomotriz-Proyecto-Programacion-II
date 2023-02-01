@@ -47,7 +47,7 @@ namespace AutomotrizFront
             filtros.Add(fechaH);
 
             string filtrosJson = JsonConvert.SerializeObject(filtros);
-            string url = "https://localhost:7188/porFiltro";
+            string url = "https://localhost:7188/facturaFiltros";
             var result = await ClientSingleton.GetInstancia().PostAsync(url, filtrosJson);
             List<FacConsulta> lst = JsonConvert.DeserializeObject<List<FacConsulta>>(result);
             foreach (FacConsulta item in lst)
