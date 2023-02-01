@@ -72,7 +72,7 @@
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(286, 680);
+            this.panelSideMenu.Size = new System.Drawing.Size(286, 753);
             this.panelSideMenu.TabIndex = 7;
             this.panelSideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSideMenu_Paint);
             // 
@@ -100,7 +100,7 @@
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSalir.Location = new System.Drawing.Point(0, 616);
+            this.btnSalir.Location = new System.Drawing.Point(0, 689);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
@@ -270,85 +270,100 @@
             this.panelForms.Location = new System.Drawing.Point(286, 0);
             this.panelForms.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelForms.Name = "panelForms";
-            this.panelForms.Size = new System.Drawing.Size(1016, 680);
+            this.panelForms.Size = new System.Drawing.Size(1296, 753);
             this.panelForms.TabIndex = 1;
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox1.AutoSize = true;
+            this.groupBox1.BackColor = System.Drawing.Color.OldLace;
             this.groupBox1.Controls.Add(this.txtUser);
             this.groupBox1.Controls.Add(this.lblUser);
             this.groupBox1.Controls.Add(this.btnInicio);
             this.groupBox1.Controls.Add(this.lblPass);
             this.groupBox1.Controls.Add(this.txtPass);
-            this.groupBox1.Location = new System.Drawing.Point(53, 31);
+            this.groupBox1.Location = new System.Drawing.Point(6, 4);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(894, 615);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(1600, 800);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Iniciar sesion";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(287, 179);
+            this.txtUser.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.txtUser.BackColor = System.Drawing.Color.LavenderBlush;
+            this.txtUser.Location = new System.Drawing.Point(484, 271);
             this.txtUser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(195, 27);
+            this.txtUser.PlaceholderText = "Ingrese Usuario";
+            this.txtUser.Size = new System.Drawing.Size(257, 27);
             this.txtUser.TabIndex = 3;
+            this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblUser
             // 
             this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(149, 183);
+            this.lblUser.Font = new System.Drawing.Font("Arial Narrow", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblUser.Location = new System.Drawing.Point(357, 273);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(62, 20);
+            this.lblUser.Size = new System.Drawing.Size(103, 27);
             this.lblUser.TabIndex = 1;
-            this.lblUser.Text = "Usuario:";
+            this.lblUser.Text = "   Usuario:";
+            this.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnInicio
             // 
-            this.btnInicio.Location = new System.Drawing.Point(339, 319);
+            this.btnInicio.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnInicio.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnInicio.Location = new System.Drawing.Point(513, 393);
             this.btnInicio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(86, 31);
+            this.btnInicio.Size = new System.Drawing.Size(163, 44);
             this.btnInicio.TabIndex = 0;
             this.btnInicio.Text = "Iniciar";
-            this.btnInicio.UseVisualStyleBackColor = true;
+            this.btnInicio.UseVisualStyleBackColor = false;
             this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click_1);
             // 
             // lblPass
             // 
             this.lblPass.AutoSize = true;
-            this.lblPass.Location = new System.Drawing.Point(149, 221);
+            this.lblPass.Font = new System.Drawing.Font("Arial Narrow", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblPass.Location = new System.Drawing.Point(357, 311);
             this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(86, 20);
+            this.lblPass.Size = new System.Drawing.Size(121, 27);
             this.lblPass.TabIndex = 2;
             this.lblPass.Text = "Contraseña:";
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(287, 217);
+            this.txtPass.BackColor = System.Drawing.Color.LavenderBlush;
+            this.txtPass.Location = new System.Drawing.Point(484, 309);
             this.txtPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(195, 27);
+            this.txtPass.PlaceholderText = "Ingrese Contraseña";
+            this.txtPass.Size = new System.Drawing.Size(257, 27);
             this.txtPass.TabIndex = 4;
+            this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPass.UseSystemPasswordChar = true;
             // 
             // FrmInicioSesion
             // 
+            this.AcceptButton = this.btnInicio;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1302, 680);
+            this.ClientSize = new System.Drawing.Size(1582, 753);
             this.Controls.Add(this.panelForms);
             this.Controls.Add(this.panelSideMenu);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmInicioSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar Sesion";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmInicioSesion_Load);
             this.panelSideMenu.ResumeLayout(false);
             this.panelSubmenuVehi.ResumeLayout(false);
@@ -356,6 +371,7 @@
             this.panelIcono.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelForms.ResumeLayout(false);
+            this.panelForms.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
