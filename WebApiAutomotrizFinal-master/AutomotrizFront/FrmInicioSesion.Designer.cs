@@ -72,7 +72,7 @@
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(286, 659);
+            this.panelSideMenu.Size = new System.Drawing.Size(286, 680);
             this.panelSideMenu.TabIndex = 7;
             this.panelSideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSideMenu_Paint);
             // 
@@ -100,7 +100,7 @@
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSalir.Location = new System.Drawing.Point(0, 595);
+            this.btnSalir.Location = new System.Drawing.Point(0, 616);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
@@ -270,21 +270,22 @@
             this.panelForms.Location = new System.Drawing.Point(286, 0);
             this.panelForms.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelForms.Name = "panelForms";
-            this.panelForms.Size = new System.Drawing.Size(1274, 659);
+            this.panelForms.Size = new System.Drawing.Size(1016, 680);
             this.panelForms.TabIndex = 1;
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox1.Controls.Add(this.txtUser);
             this.groupBox1.Controls.Add(this.lblUser);
             this.groupBox1.Controls.Add(this.btnInicio);
             this.groupBox1.Controls.Add(this.lblPass);
             this.groupBox1.Controls.Add(this.txtPass);
-            this.groupBox1.Location = new System.Drawing.Point(229, 71);
+            this.groupBox1.Location = new System.Drawing.Point(53, 31);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(619, 515);
+            this.groupBox1.Size = new System.Drawing.Size(894, 615);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Iniciar sesion";
@@ -340,7 +341,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1560, 659);
+            this.ClientSize = new System.Drawing.Size(1302, 680);
             this.Controls.Add(this.panelForms);
             this.Controls.Add(this.panelSideMenu);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
