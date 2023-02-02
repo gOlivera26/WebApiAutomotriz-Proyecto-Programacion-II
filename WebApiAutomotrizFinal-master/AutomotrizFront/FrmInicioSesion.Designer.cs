@@ -264,7 +264,7 @@
             // 
             // panelForms
             // 
-            this.panelForms.BackColor = System.Drawing.Color.White;
+            this.panelForms.BackColor = System.Drawing.Color.LemonChiffon;
             this.panelForms.Controls.Add(this.groupBox1);
             this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelForms.Location = new System.Drawing.Point(286, 0);
@@ -276,17 +276,18 @@
             // groupBox1
             // 
             this.groupBox1.AutoSize = true;
-            this.groupBox1.BackColor = System.Drawing.Color.OldLace;
+            this.groupBox1.BackColor = System.Drawing.Color.LemonChiffon;
             this.groupBox1.Controls.Add(this.txtUser);
             this.groupBox1.Controls.Add(this.lblUser);
             this.groupBox1.Controls.Add(this.btnInicio);
             this.groupBox1.Controls.Add(this.lblPass);
             this.groupBox1.Controls.Add(this.txtPass);
-            this.groupBox1.Location = new System.Drawing.Point(6, 4);
+            this.groupBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Location = new System.Drawing.Point(6, 0);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(1600, 800);
+            this.groupBox1.Size = new System.Drawing.Size(1600, 804);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Iniciar sesion";
@@ -296,11 +297,11 @@
             // 
             this.txtUser.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.txtUser.BackColor = System.Drawing.Color.LavenderBlush;
-            this.txtUser.Location = new System.Drawing.Point(484, 271);
+            this.txtUser.Location = new System.Drawing.Point(466, 271);
             this.txtUser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUser.Name = "txtUser";
             this.txtUser.PlaceholderText = "Ingrese Usuario";
-            this.txtUser.Size = new System.Drawing.Size(257, 27);
+            this.txtUser.Size = new System.Drawing.Size(275, 25);
             this.txtUser.TabIndex = 3;
             this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -346,7 +347,7 @@
             this.txtPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPass.Name = "txtPass";
             this.txtPass.PlaceholderText = "Ingrese Contraseña";
-            this.txtPass.Size = new System.Drawing.Size(257, 27);
+            this.txtPass.Size = new System.Drawing.Size(257, 25);
             this.txtPass.TabIndex = 4;
             this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPass.UseSystemPasswordChar = true;
@@ -357,6 +358,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(1582, 753);
             this.Controls.Add(this.panelForms);
             this.Controls.Add(this.panelSideMenu);

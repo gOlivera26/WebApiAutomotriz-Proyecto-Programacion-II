@@ -152,29 +152,32 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(273, 9);
+            this.label9.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(309, 9);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(214, 29);
+            this.label9.Size = new System.Drawing.Size(218, 28);
             this.label9.TabIndex = 54;
             this.label9.Text = "Registro de cliente";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(177, 35);
+            this.txtNombre.BackColor = System.Drawing.Color.Linen;
+            this.txtNombre.Location = new System.Drawing.Point(189, 35);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(299, 27);
             this.txtNombre.TabIndex = 55;
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(177, 79);
+            this.txtApellido.BackColor = System.Drawing.Color.Linen;
+            this.txtApellido.Location = new System.Drawing.Point(188, 81);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(299, 27);
             this.txtApellido.TabIndex = 56;
             // 
             // txtNumeroTel
             // 
+            this.txtNumeroTel.BackColor = System.Drawing.Color.Linen;
             this.txtNumeroTel.Location = new System.Drawing.Point(208, 85);
             this.txtNumeroTel.Name = "txtNumeroTel";
             this.txtNumeroTel.Size = new System.Drawing.Size(220, 27);
@@ -183,6 +186,7 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.BackColor = System.Drawing.Color.Linen;
             this.txtEmail.Location = new System.Drawing.Point(106, 37);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(322, 27);
@@ -190,6 +194,7 @@
             // 
             // txtAltura
             // 
+            this.txtAltura.BackColor = System.Drawing.Color.Linen;
             this.txtAltura.Location = new System.Drawing.Point(112, 148);
             this.txtAltura.Name = "txtAltura";
             this.txtAltura.Size = new System.Drawing.Size(330, 27);
@@ -197,6 +202,7 @@
             // 
             // txtCalle
             // 
+            this.txtCalle.BackColor = System.Drawing.Color.Linen;
             this.txtCalle.Location = new System.Drawing.Point(112, 99);
             this.txtCalle.Name = "txtCalle";
             this.txtCalle.Size = new System.Drawing.Size(330, 27);
@@ -204,7 +210,8 @@
             // 
             // txtNumDoc
             // 
-            this.txtNumDoc.Location = new System.Drawing.Point(240, 133);
+            this.txtNumDoc.BackColor = System.Drawing.Color.Linen;
+            this.txtNumDoc.Location = new System.Drawing.Point(252, 134);
             this.txtNumDoc.Name = "txtNumDoc";
             this.txtNumDoc.Size = new System.Drawing.Size(236, 27);
             this.txtNumDoc.TabIndex = 61;
@@ -212,6 +219,7 @@
             // 
             // txtBarrio
             // 
+            this.txtBarrio.BackColor = System.Drawing.Color.Linen;
             this.txtBarrio.Location = new System.Drawing.Point(112, 45);
             this.txtBarrio.Name = "txtBarrio";
             this.txtBarrio.Size = new System.Drawing.Size(330, 27);
@@ -229,6 +237,7 @@
             // 
             // cboTipo
             // 
+            this.cboTipo.BackColor = System.Drawing.Color.Linen;
             this.cboTipo.FormattingEnabled = true;
             this.cboTipo.Location = new System.Drawing.Point(198, 63);
             this.cboTipo.Name = "cboTipo";
@@ -246,7 +255,7 @@
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Location = new System.Drawing.Point(40, 111);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(536, 187);
+            this.groupBox1.Size = new System.Drawing.Size(516, 187);
             this.groupBox1.TabIndex = 65;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Personales: ";
@@ -261,7 +270,7 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Location = new System.Drawing.Point(40, 311);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(477, 187);
+            this.groupBox2.Size = new System.Drawing.Size(516, 187);
             this.groupBox2.TabIndex = 66;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Direccion";
@@ -274,39 +283,48 @@
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Location = new System.Drawing.Point(46, 511);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(471, 125);
+            this.groupBox3.Size = new System.Drawing.Size(510, 125);
             this.groupBox3.TabIndex = 67;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Comunicacion:";
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(514, 599);
+            this.btnAgregar.BackColor = System.Drawing.Color.PeachPuff;
+            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAgregar.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAgregar.Location = new System.Drawing.Point(562, 591);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(184, 37);
             this.btnAgregar.TabIndex = 69;
             this.btnAgregar.Text = "Añadir";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(40, 867);
+            this.button1.BackColor = System.Drawing.Color.PeachPuff;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(69, 867);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(184, 37);
             this.button1.TabIndex = 70;
             this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(489, 867);
+            this.btnSalir.BackColor = System.Drawing.Color.PeachPuff;
+            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSalir.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSalir.Location = new System.Drawing.Point(592, 867);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(184, 37);
             this.btnSalir.TabIndex = 71;
             this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // dgvDetallesCliente
@@ -314,6 +332,7 @@
             this.dgvDetallesCliente.AllowUserToAddRows = false;
             this.dgvDetallesCliente.AllowUserToDeleteRows = false;
             this.dgvDetallesCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvDetallesCliente.BackgroundColor = System.Drawing.Color.NavajoWhite;
             this.dgvDetallesCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetallesCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColId,
@@ -410,7 +429,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(846, 932);
+            this.BackColor = System.Drawing.Color.LemonChiffon;
+            this.ClientSize = new System.Drawing.Size(818, 926);
             this.Controls.Add(this.dgvDetallesCliente);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.button1);
