@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvDetalles = new System.Windows.Forms.DataGridView();
+            this.dgvConsultaFactura = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,32 +45,32 @@
             this.lblNro = new System.Windows.Forms.Label();
             this.lblFechaHasta = new System.Windows.Forms.Label();
             this.lblFechaDesde = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaFactura)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvDetalles
+            // dgvConsultaFactura
             // 
-            this.dgvDetalles.AllowUserToAddRows = false;
-            this.dgvDetalles.AllowUserToDeleteRows = false;
-            this.dgvDetalles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvDetalles.BackgroundColor = System.Drawing.Color.LightCyan;
-            this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvConsultaFactura.AllowUserToAddRows = false;
+            this.dgvConsultaFactura.AllowUserToDeleteRows = false;
+            this.dgvConsultaFactura.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvConsultaFactura.BackgroundColor = System.Drawing.Color.AntiqueWhite;
+            this.dgvConsultaFactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConsultaFactura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.TCliente,
             this.ColFecha,
             this.ColFormaP,
             this.ColFormaEntrega});
-            this.dgvDetalles.Location = new System.Drawing.Point(159, 242);
-            this.dgvDetalles.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dgvDetalles.Name = "dgvDetalles";
-            this.dgvDetalles.ReadOnly = true;
-            this.dgvDetalles.RowHeadersWidth = 51;
-            this.dgvDetalles.RowTemplate.Height = 24;
-            this.dgvDetalles.Size = new System.Drawing.Size(797, 291);
-            this.dgvDetalles.TabIndex = 17;
-            this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
+            this.dgvConsultaFactura.Location = new System.Drawing.Point(159, 242);
+            this.dgvConsultaFactura.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dgvConsultaFactura.Name = "dgvConsultaFactura";
+            this.dgvConsultaFactura.ReadOnly = true;
+            this.dgvConsultaFactura.RowHeadersWidth = 51;
+            this.dgvConsultaFactura.RowTemplate.Height = 24;
+            this.dgvConsultaFactura.Size = new System.Drawing.Size(797, 291);
+            this.dgvConsultaFactura.TabIndex = 17;
+            this.dgvConsultaFactura.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
             // 
             // Id
             // 
@@ -230,13 +230,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1078, 560);
-            this.Controls.Add(this.dgvDetalles);
+            this.BackColor = System.Drawing.Color.LemonChiffon;
+            this.ClientSize = new System.Drawing.Size(1078, 576);
+            this.Controls.Add(this.dgvConsultaFactura);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmConsultaFacturas";
             this.Text = "FrmConsultaFacturas";
             this.Load += new System.EventHandler(this.FrmConsultaFacturas_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaFactura)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -244,7 +245,7 @@
         }
 
         #endregion
-        private DataGridView dgvDetalles;
+        private DataGridView dgvConsultaFactura;
         private DataGridViewTextBoxColumn Id;
         private DataGridViewTextBoxColumn TCliente;
         private DataGridViewTextBoxColumn ColFecha;

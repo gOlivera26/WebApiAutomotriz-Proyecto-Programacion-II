@@ -332,7 +332,7 @@
             this.dgvDetallesCliente.AllowUserToAddRows = false;
             this.dgvDetallesCliente.AllowUserToDeleteRows = false;
             this.dgvDetallesCliente.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dgvDetallesCliente.BackgroundColor = System.Drawing.Color.NavajoWhite;
+            this.dgvDetallesCliente.BackgroundColor = System.Drawing.Color.AntiqueWhite;
             this.dgvDetallesCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetallesCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColId,

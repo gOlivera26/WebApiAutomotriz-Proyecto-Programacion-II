@@ -34,6 +34,12 @@
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.dgvDetalles = new System.Windows.Forms.DataGridView();
+            this.ColId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColModelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
@@ -44,12 +50,6 @@
             this.cboColor = new System.Windows.Forms.ComboBox();
             this.cboMarcas = new System.Windows.Forms.ComboBox();
             this.cboModelo = new System.Windows.Forms.ComboBox();
-            this.ColId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColModelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
@@ -97,6 +97,7 @@
             // 
             // btnAceptar
             // 
+            this.btnAceptar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAceptar.Location = new System.Drawing.Point(451, 375);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(219, 40);
@@ -107,6 +108,7 @@
             // 
             // btnAgregar
             // 
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAgregar.Location = new System.Drawing.Point(912, 339);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(219, 40);
@@ -120,6 +122,7 @@
             this.dgvDetalles.AllowUserToAddRows = false;
             this.dgvDetalles.AllowUserToDeleteRows = false;
             this.dgvDetalles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDetalles.BackgroundColor = System.Drawing.Color.AntiqueWhite;
             this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColId,
@@ -135,6 +138,49 @@
             this.dgvDetalles.RowTemplate.Height = 29;
             this.dgvDetalles.Size = new System.Drawing.Size(770, 271);
             this.dgvDetalles.TabIndex = 8;
+            // 
+            // ColId
+            // 
+            this.ColId.HeaderText = "ID";
+            this.ColId.MinimumWidth = 6;
+            this.ColId.Name = "ColId";
+            this.ColId.ReadOnly = true;
+            this.ColId.Visible = false;
+            // 
+            // ColDescripcion
+            // 
+            this.ColDescripcion.HeaderText = "Descripcion";
+            this.ColDescripcion.MinimumWidth = 6;
+            this.ColDescripcion.Name = "ColDescripcion";
+            this.ColDescripcion.ReadOnly = true;
+            // 
+            // ColMarca
+            // 
+            this.ColMarca.HeaderText = "Marca";
+            this.ColMarca.MinimumWidth = 6;
+            this.ColMarca.Name = "ColMarca";
+            this.ColMarca.ReadOnly = true;
+            // 
+            // ColModelo
+            // 
+            this.ColModelo.HeaderText = "Modelo";
+            this.ColModelo.MinimumWidth = 6;
+            this.ColModelo.Name = "ColModelo";
+            this.ColModelo.ReadOnly = true;
+            // 
+            // ColColor
+            // 
+            this.ColColor.HeaderText = "Color";
+            this.ColColor.MinimumWidth = 6;
+            this.ColColor.Name = "ColColor";
+            this.ColColor.ReadOnly = true;
+            // 
+            // ColPrecio
+            // 
+            this.ColPrecio.HeaderText = "Precio";
+            this.ColPrecio.MinimumWidth = 6;
+            this.ColPrecio.Name = "ColPrecio";
+            this.ColPrecio.ReadOnly = true;
             // 
             // label1
             // 
@@ -219,53 +265,11 @@
             this.cboModelo.Size = new System.Drawing.Size(233, 28);
             this.cboModelo.TabIndex = 2;
             // 
-            // ColId
-            // 
-            this.ColId.HeaderText = "ID";
-            this.ColId.MinimumWidth = 6;
-            this.ColId.Name = "ColId";
-            this.ColId.ReadOnly = true;
-            this.ColId.Visible = false;
-            // 
-            // ColDescripcion
-            // 
-            this.ColDescripcion.HeaderText = "Descripcion";
-            this.ColDescripcion.MinimumWidth = 6;
-            this.ColDescripcion.Name = "ColDescripcion";
-            this.ColDescripcion.ReadOnly = true;
-            // 
-            // ColMarca
-            // 
-            this.ColMarca.HeaderText = "Marca";
-            this.ColMarca.MinimumWidth = 6;
-            this.ColMarca.Name = "ColMarca";
-            this.ColMarca.ReadOnly = true;
-            // 
-            // ColModelo
-            // 
-            this.ColModelo.HeaderText = "Modelo";
-            this.ColModelo.MinimumWidth = 6;
-            this.ColModelo.Name = "ColModelo";
-            this.ColModelo.ReadOnly = true;
-            // 
-            // ColColor
-            // 
-            this.ColColor.HeaderText = "Color";
-            this.ColColor.MinimumWidth = 6;
-            this.ColColor.Name = "ColColor";
-            this.ColColor.ReadOnly = true;
-            // 
-            // ColPrecio
-            // 
-            this.ColPrecio.HeaderText = "Precio";
-            this.ColPrecio.MinimumWidth = 6;
-            this.ColPrecio.Name = "ColPrecio";
-            this.ColPrecio.ReadOnly = true;
-            // 
             // FrmInsertVehiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(1226, 463);
             this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

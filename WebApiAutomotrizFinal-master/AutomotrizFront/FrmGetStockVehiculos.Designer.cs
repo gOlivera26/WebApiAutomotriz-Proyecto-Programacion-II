@@ -42,13 +42,14 @@
             this.ColMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColModelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnConsultarSinFiltro = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockVehiculos)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.BackColor = System.Drawing.Color.AntiqueWhite;
             this.groupBox1.Controls.Add(this.cboMarcas);
             this.groupBox1.Controls.Add(this.lblMarca);
             this.groupBox1.Controls.Add(this.btnConsultar);
@@ -58,7 +59,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(1093, 292);
+            this.groupBox1.Size = new System.Drawing.Size(973, 292);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros de Busqueda";
@@ -66,7 +67,7 @@
             // cboMarcas
             // 
             this.cboMarcas.FormattingEnabled = true;
-            this.cboMarcas.Location = new System.Drawing.Point(208, 148);
+            this.cboMarcas.Location = new System.Drawing.Point(267, 152);
             this.cboMarcas.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboMarcas.Name = "cboMarcas";
             this.cboMarcas.Size = new System.Drawing.Size(227, 28);
@@ -76,7 +77,7 @@
             // 
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblMarca.Location = new System.Drawing.Point(6, 149);
+            this.lblMarca.Location = new System.Drawing.Point(65, 153);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(164, 24);
             this.lblMarca.TabIndex = 2;
@@ -86,7 +87,7 @@
             // 
             this.btnConsultar.BackColor = System.Drawing.Color.Transparent;
             this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnConsultar.Location = new System.Drawing.Point(208, 219);
+            this.btnConsultar.Location = new System.Drawing.Point(199, 222);
             this.btnConsultar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(174, 43);
@@ -99,7 +100,7 @@
             // 
             this.lblModelo.AutoSize = true;
             this.lblModelo.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblModelo.Location = new System.Drawing.Point(6, 63);
+            this.lblModelo.Location = new System.Drawing.Point(65, 67);
             this.lblModelo.Name = "lblModelo";
             this.lblModelo.Size = new System.Drawing.Size(168, 24);
             this.lblModelo.TabIndex = 1;
@@ -108,7 +109,7 @@
             // cboModelos
             // 
             this.cboModelos.FormattingEnabled = true;
-            this.cboModelos.Location = new System.Drawing.Point(208, 61);
+            this.cboModelos.Location = new System.Drawing.Point(267, 65);
             this.cboModelos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboModelos.Name = "cboModelos";
             this.cboModelos.Size = new System.Drawing.Size(227, 28);
@@ -119,7 +120,7 @@
             this.dgvStockVehiculos.AllowUserToAddRows = false;
             this.dgvStockVehiculos.AllowUserToDeleteRows = false;
             this.dgvStockVehiculos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvStockVehiculos.BackgroundColor = System.Drawing.Color.LightCyan;
+            this.dgvStockVehiculos.BackgroundColor = System.Drawing.Color.AntiqueWhite;
             this.dgvStockVehiculos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockVehiculos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -188,11 +189,26 @@
             this.ColColor.Name = "ColColor";
             this.ColColor.ReadOnly = true;
             // 
+            // btnConsultarSinFiltro
+            // 
+            this.btnConsultarSinFiltro.BackColor = System.Drawing.Color.Transparent;
+            this.btnConsultarSinFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnConsultarSinFiltro.Location = new System.Drawing.Point(403, 644);
+            this.btnConsultarSinFiltro.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnConsultarSinFiltro.Name = "btnConsultarSinFiltro";
+            this.btnConsultarSinFiltro.Size = new System.Drawing.Size(297, 53);
+            this.btnConsultarSinFiltro.TabIndex = 4;
+            this.btnConsultarSinFiltro.Text = "Consultar Todos";
+            this.btnConsultarSinFiltro.UseVisualStyleBackColor = false;
+            this.btnConsultarSinFiltro.Click += new System.EventHandler(this.btnConsultarSinFiltro_Click);
+            // 
             // FrmGetStockVehiculos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1199, 645);
+            this.BackColor = System.Drawing.Color.LemonChiffon;
+            this.ClientSize = new System.Drawing.Size(1199, 751);
+            this.Controls.Add(this.btnConsultarSinFiltro);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvStockVehiculos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -221,5 +237,6 @@
         private DataGridViewTextBoxColumn ColMarca;
         private DataGridViewTextBoxColumn ColModelo;
         private DataGridViewTextBoxColumn ColColor;
+        private Button btnConsultarSinFiltro;
     }
 }

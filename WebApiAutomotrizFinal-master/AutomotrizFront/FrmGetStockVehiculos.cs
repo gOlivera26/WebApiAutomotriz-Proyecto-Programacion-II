@@ -86,5 +86,20 @@ namespace AutomotrizFront
             
 
         }
+
+        private async void btnConsultarSinFiltro_Click(object sender, EventArgs e)
+        {
+            dgvStockVehiculos.Rows.Clear();
+            
+            string url = "https://localhost:7188/api/Vehiculos";
+            var result = await ClientSingleton.GetInstancia().GetAsync(url);
+
+            List<Vehiculo> lst = JsonConvert.DeserializeObject<List<Vehiculo>>(result);
+            foreach (Vehiculo item in lst)
+            {
+                dgvStockVehiculos.Rows.Add(new object[] { item.IdVehiculo, item.Descripcion, item.Precio, item.Stock, item.Marca, item.Modelo, item.Color });
+            }
+
+        }
     }
 }

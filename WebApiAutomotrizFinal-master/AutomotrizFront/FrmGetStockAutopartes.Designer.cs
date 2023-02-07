@@ -42,6 +42,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblModeloAutoparte = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnConsultarTodos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockAutopartes)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +52,7 @@
             this.dgvStockAutopartes.AllowUserToAddRows = false;
             this.dgvStockAutopartes.AllowUserToDeleteRows = false;
             this.dgvStockAutopartes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvStockAutopartes.BackgroundColor = System.Drawing.Color.LightCyan;
+            this.dgvStockAutopartes.BackgroundColor = System.Drawing.Color.AntiqueWhite;
             this.dgvStockAutopartes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockAutopartes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -114,7 +115,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.BackColor = System.Drawing.Color.AntiqueWhite;
             this.groupBox1.Controls.Add(this.btnConsultarAutoparteFiltro);
             this.groupBox1.Controls.Add(this.cboMarcas);
             this.groupBox1.Controls.Add(this.cboModelos);
@@ -132,7 +133,7 @@
             // btnConsultarAutoparteFiltro
             // 
             this.btnConsultarAutoparteFiltro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnConsultarAutoparteFiltro.Location = new System.Drawing.Point(609, 189);
+            this.btnConsultarAutoparteFiltro.Location = new System.Drawing.Point(526, 188);
             this.btnConsultarAutoparteFiltro.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnConsultarAutoparteFiltro.Name = "btnConsultarAutoparteFiltro";
             this.btnConsultarAutoparteFiltro.Size = new System.Drawing.Size(145, 44);
@@ -191,11 +192,25 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Consultar Disponibilidad autopartes";
             // 
+            // btnConsultarTodos
+            // 
+            this.btnConsultarTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnConsultarTodos.Location = new System.Drawing.Point(420, 581);
+            this.btnConsultarTodos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnConsultarTodos.Name = "btnConsultarTodos";
+            this.btnConsultarTodos.Size = new System.Drawing.Size(188, 50);
+            this.btnConsultarTodos.TabIndex = 7;
+            this.btnConsultarTodos.Text = "Consultar Todos";
+            this.btnConsultarTodos.UseVisualStyleBackColor = true;
+            this.btnConsultarTodos.Click += new System.EventHandler(this.btnConsultarTodos_Click);
+            // 
             // FrmGetStockAutopartes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1038, 577);
+            this.BackColor = System.Drawing.Color.LemonChiffon;
+            this.ClientSize = new System.Drawing.Size(1068, 674);
+            this.Controls.Add(this.btnConsultarTodos);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvStockAutopartes);
             this.Controls.Add(this.groupBox1);
@@ -226,5 +241,6 @@
         private DataGridViewTextBoxColumn ColMarca;
         private DataGridViewTextBoxColumn ColModelo;
         private Label label2;
+        private Button btnConsultarTodos;
     }
 }

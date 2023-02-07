@@ -83,5 +83,19 @@ namespace AutomotrizFront
         {
 
         }
+
+        private async void btnConsultarTodos_Click(object sender, EventArgs e)
+        {
+            dgvStockAutopartes.Rows.Clear();
+
+            string url = "https://localhost:7188/api/Autopartes";
+            var result = await ClientSingleton.GetInstancia().GetAsync(url);
+            List<Autopartes> lst = JsonConvert.DeserializeObject<List<Autopartes>>(result);
+            foreach (Autopartes item in lst)
+            {
+                dgvStockAutopartes.Rows.Add(new object[] { item.IdAutoparte, item.Descripcion, item.Precio, item.Stock, item.Marca, item.Modelo });
+            }
+
+        }
     }
 }

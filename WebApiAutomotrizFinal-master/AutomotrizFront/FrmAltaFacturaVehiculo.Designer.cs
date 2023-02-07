@@ -75,6 +75,7 @@
             // 
             // cboVendedor
             // 
+            this.cboVendedor.BackColor = System.Drawing.Color.Linen;
             this.cboVendedor.FormattingEnabled = true;
             this.cboVendedor.Location = new System.Drawing.Point(98, 41);
             this.cboVendedor.Name = "cboVendedor";
@@ -97,7 +98,7 @@
             // btnRegistrar
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRegistrar.Location = new System.Drawing.Point(163, 93);
+            this.btnRegistrar.Location = new System.Drawing.Point(163, 111);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(125, 33);
             this.btnRegistrar.TabIndex = 1;
@@ -109,7 +110,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(19, 85);
+            this.label1.Location = new System.Drawing.Point(19, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 46);
             this.label1.TabIndex = 15;
@@ -117,6 +118,7 @@
             // 
             // cboCliente
             // 
+            this.cboCliente.BackColor = System.Drawing.Color.Linen;
             this.cboCliente.FormattingEnabled = true;
             this.cboCliente.Location = new System.Drawing.Point(83, 33);
             this.cboCliente.Name = "cboCliente";
@@ -207,6 +209,7 @@
             // 
             // cboFormaEntrega
             // 
+            this.cboFormaEntrega.BackColor = System.Drawing.Color.Linen;
             this.cboFormaEntrega.FormattingEnabled = true;
             this.cboFormaEntrega.Location = new System.Drawing.Point(163, 148);
             this.cboFormaEntrega.Name = "cboFormaEntrega";
@@ -225,6 +228,7 @@
             // 
             // cboFormaPago
             // 
+            this.cboFormaPago.BackColor = System.Drawing.Color.Linen;
             this.cboFormaPago.FormattingEnabled = true;
             this.cboFormaPago.Location = new System.Drawing.Point(163, 96);
             this.cboFormaPago.Name = "cboFormaPago";
@@ -298,6 +302,7 @@
             // 
             // NumCantidad
             // 
+            this.NumCantidad.BackColor = System.Drawing.Color.Linen;
             this.NumCantidad.Location = new System.Drawing.Point(155, 227);
             this.NumCantidad.Name = "NumCantidad";
             this.NumCantidad.Size = new System.Drawing.Size(375, 27);
@@ -333,18 +338,19 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label13.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(513, 619);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(67, 23);
+            this.label13.Size = new System.Drawing.Size(79, 26);
             this.label13.TabIndex = 36;
             this.label13.Text = "Precio:";
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(609, 617);
+            this.txtPrecio.BackColor = System.Drawing.Color.Linen;
+            this.txtPrecio.Location = new System.Drawing.Point(606, 617);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(323, 27);
+            this.txtPrecio.Size = new System.Drawing.Size(345, 27);
             this.txtPrecio.TabIndex = 33;
             // 
             // dgvDetalles
@@ -431,7 +437,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Sitka Small", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(515, 60);
+            this.label9.Location = new System.Drawing.Point(518, 52);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(87, 23);
             this.label9.TabIndex = 23;
@@ -439,10 +445,11 @@
             // 
             // cboVehiculos
             // 
+            this.cboVehiculos.BackColor = System.Drawing.Color.Linen;
             this.cboVehiculos.FormattingEnabled = true;
-            this.cboVehiculos.Location = new System.Drawing.Point(653, 51);
+            this.cboVehiculos.Location = new System.Drawing.Point(634, 51);
             this.cboVehiculos.Name = "cboVehiculos";
-            this.cboVehiculos.Size = new System.Drawing.Size(297, 28);
+            this.cboVehiculos.Size = new System.Drawing.Size(284, 28);
             this.cboVehiculos.TabIndex = 3;
             this.cboVehiculos.SelectedIndexChanged += new System.EventHandler(this.cboVehiculos_SelectedIndexChanged);
             // 

@@ -35,7 +35,7 @@ namespace AutomotrizFront
 
         private async void btnConsultar_Click(object sender, EventArgs e)
         {
-            dgvDetalles.Rows.Clear();
+            dgvConsultaFactura.Rows.Clear();
             List<Parametro> filtros = new List<Parametro>();
             Parametro fechaD = new Parametro();
             fechaD.Clave = "@fechaDesde";
@@ -52,7 +52,7 @@ namespace AutomotrizFront
             List<FacConsulta> lst = JsonConvert.DeserializeObject<List<FacConsulta>>(result);
             foreach (FacConsulta item in lst)
             {
-                dgvDetalles.Rows.Add(new object[] { item.NroFactura, item.IdCliente.TipoCliente, item.Fecha, item.IdFormaPago.Forma, item.IdFormaEntrega.Forma });
+                dgvConsultaFactura.Rows.Add(new object[] { item.NroFactura, item.IdCliente.TipoCliente, item.Fecha, item.IdFormaPago.Forma, item.IdFormaEntrega.Forma });
             }
 
         }
