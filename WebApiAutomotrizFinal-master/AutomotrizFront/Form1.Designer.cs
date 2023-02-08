@@ -31,6 +31,14 @@
             this.btnConsultarTodos = new System.Windows.Forms.Button();
             this.lblHero = new System.Windows.Forms.Label();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
+            this.ColID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColBarrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColCalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColAltura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColNroDoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cboTipo = new System.Windows.Forms.ComboBox();
             this.txtDni = new System.Windows.Forms.TextBox();
@@ -41,14 +49,6 @@
             this.lblDni = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.btnConsultarFiltro = new System.Windows.Forms.Button();
-            this.ColID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColBarrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColCalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColAltura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColNroDoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -100,6 +100,70 @@
             this.dgvClientes.Size = new System.Drawing.Size(971, 205);
             this.dgvClientes.TabIndex = 13;
             // 
+            // ColID
+            // 
+            this.ColID.HeaderText = "ColID";
+            this.ColID.MinimumWidth = 10;
+            this.ColID.Name = "ColID";
+            this.ColID.ReadOnly = true;
+            this.ColID.Visible = false;
+            // 
+            // ColNombre
+            // 
+            this.ColNombre.FillWeight = 107.3084F;
+            this.ColNombre.HeaderText = "Nombre";
+            this.ColNombre.MinimumWidth = 6;
+            this.ColNombre.Name = "ColNombre";
+            this.ColNombre.ReadOnly = true;
+            // 
+            // ColApellido
+            // 
+            this.ColApellido.FillWeight = 107.3084F;
+            this.ColApellido.HeaderText = "Apellido";
+            this.ColApellido.MinimumWidth = 6;
+            this.ColApellido.Name = "ColApellido";
+            this.ColApellido.ReadOnly = true;
+            // 
+            // ColBarrio
+            // 
+            this.ColBarrio.FillWeight = 107.3084F;
+            this.ColBarrio.HeaderText = "Barrio";
+            this.ColBarrio.MinimumWidth = 6;
+            this.ColBarrio.Name = "ColBarrio";
+            this.ColBarrio.ReadOnly = true;
+            // 
+            // ColCalle
+            // 
+            this.ColCalle.FillWeight = 107.3084F;
+            this.ColCalle.HeaderText = "Calle";
+            this.ColCalle.MinimumWidth = 6;
+            this.ColCalle.Name = "ColCalle";
+            this.ColCalle.ReadOnly = true;
+            // 
+            // ColAltura
+            // 
+            this.ColAltura.FillWeight = 56.14973F;
+            this.ColAltura.HeaderText = "Altura";
+            this.ColAltura.MinimumWidth = 15;
+            this.ColAltura.Name = "ColAltura";
+            this.ColAltura.ReadOnly = true;
+            // 
+            // ColNroDoc
+            // 
+            this.ColNroDoc.FillWeight = 107.3084F;
+            this.ColNroDoc.HeaderText = "Documento";
+            this.ColNroDoc.MinimumWidth = 6;
+            this.ColNroDoc.Name = "ColNroDoc";
+            this.ColNroDoc.ReadOnly = true;
+            // 
+            // ColTelefono
+            // 
+            this.ColTelefono.FillWeight = 107.3084F;
+            this.ColTelefono.HeaderText = "Telefono";
+            this.ColTelefono.MinimumWidth = 6;
+            this.ColTelefono.Name = "ColTelefono";
+            this.ColTelefono.ReadOnly = true;
+            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.AntiqueWhite;
@@ -128,6 +192,7 @@
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(217, 28);
             this.cboTipo.TabIndex = 15;
+            this.cboTipo.SelectedIndexChanged += new System.EventHandler(this.cboTipo_SelectedIndexChanged);
             // 
             // txtDni
             // 
@@ -135,6 +200,7 @@
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(217, 27);
             this.txtDni.TabIndex = 14;
+            this.txtDni.TextChanged += new System.EventHandler(this.txtDni_TextChanged);
             // 
             // txtApellido
             // 
@@ -200,70 +266,7 @@
             this.btnConsultarFiltro.TabIndex = 6;
             this.btnConsultarFiltro.Text = "Consultar ";
             this.btnConsultarFiltro.UseVisualStyleBackColor = true;
-            // 
-            // ColID
-            // 
-            this.ColID.HeaderText = "ColID";
-            this.ColID.MinimumWidth = 10;
-            this.ColID.Name = "ColID";
-            this.ColID.ReadOnly = true;
-            this.ColID.Visible = false;
-            // 
-            // ColNombre
-            // 
-            this.ColNombre.FillWeight = 107.3084F;
-            this.ColNombre.HeaderText = "Nombre";
-            this.ColNombre.MinimumWidth = 6;
-            this.ColNombre.Name = "ColNombre";
-            this.ColNombre.ReadOnly = true;
-            // 
-            // ColApellido
-            // 
-            this.ColApellido.FillWeight = 107.3084F;
-            this.ColApellido.HeaderText = "Apellido";
-            this.ColApellido.MinimumWidth = 6;
-            this.ColApellido.Name = "ColApellido";
-            this.ColApellido.ReadOnly = true;
-            // 
-            // ColBarrio
-            // 
-            this.ColBarrio.FillWeight = 107.3084F;
-            this.ColBarrio.HeaderText = "Barrio";
-            this.ColBarrio.MinimumWidth = 6;
-            this.ColBarrio.Name = "ColBarrio";
-            this.ColBarrio.ReadOnly = true;
-            // 
-            // ColCalle
-            // 
-            this.ColCalle.FillWeight = 107.3084F;
-            this.ColCalle.HeaderText = "Calle";
-            this.ColCalle.MinimumWidth = 6;
-            this.ColCalle.Name = "ColCalle";
-            this.ColCalle.ReadOnly = true;
-            // 
-            // ColAltura
-            // 
-            this.ColAltura.FillWeight = 56.14973F;
-            this.ColAltura.HeaderText = "Altura";
-            this.ColAltura.MinimumWidth = 15;
-            this.ColAltura.Name = "ColAltura";
-            this.ColAltura.ReadOnly = true;
-            // 
-            // ColNroDoc
-            // 
-            this.ColNroDoc.FillWeight = 107.3084F;
-            this.ColNroDoc.HeaderText = "Documento";
-            this.ColNroDoc.MinimumWidth = 6;
-            this.ColNroDoc.Name = "ColNroDoc";
-            this.ColNroDoc.ReadOnly = true;
-            // 
-            // ColTelefono
-            // 
-            this.ColTelefono.FillWeight = 107.3084F;
-            this.ColTelefono.HeaderText = "Telefono";
-            this.ColTelefono.MinimumWidth = 6;
-            this.ColTelefono.Name = "ColTelefono";
-            this.ColTelefono.ReadOnly = true;
+            this.btnConsultarFiltro.Click += new System.EventHandler(this.btnConsultarFiltro_Click);
             // 
             // frmClientes
             // 

@@ -157,6 +157,52 @@ namespace AutomotrizBackend.Datos.Implementaciones
             return lst;
         }
 
+        public List<Cliente> CargarClientesFiltro(List<Parametro> criterios)
+        {
+            List<Cliente> lst = new List<Cliente>();
+            DataTable tabla = new DataTable();
+            SqlConnection cnn = new SqlConnection(@"Data Source=.\SQLEXPRESS01;Initial Catalog=Automotriz_ProgIIDef;Integrated Security=True");
+            try
+            {
+                cnn.Open();
+
+                SqlCommand cmd = new SqlCommand("SP_Consultar_ClienteFiltro", cnn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                foreach (Parametro p in criterios)
+                {
+                    if (p.Valor == null)
+                        cmd.Parameters.AddWithValue(p.Clave, DBNull.Value);
+                    else
+                        cmd.Parameters.AddWithValue(p.Clave, p.Valor.ToString());
+                }
+                tabla.Load(cmd.ExecuteReader());
+
+                foreach (DataRow dr in tabla.Rows)
+                {
+                    Cliente c = new Cliente();
+                    c.IdCliente = Convert.ToInt32(dr["id_cliente"]);
+                    c.Nombre = Convert.ToString(dr["nombre"]);
+                    c.Apellido = Convert.ToString(dr["apellido"]);
+                    c.Barrio = Convert.ToString(dr["barrio"]);
+                    c.Calle = Convert.ToString(dr["calle"]);
+                    c.Altura = Convert.ToInt32(dr["Altura"]);
+                    c.TipoCliente.Tipo = Convert.ToString(dr["nombre"]);
+                    c.NroDoc = Convert.ToInt32(dr["nro_doc"]);
+                    c.NroTel = Convert.ToInt32(dr["nro_tel"]);
+                    c.Email = Convert.ToString(dr["email"]);
+                    lst.Add(c);
+
+                }
+                cnn.Close();
+            }
+
+            catch (Exception)
+            {
+                cnn.Close();
+            }
+            return lst;
+        }
+
         public List<FacConsulta> CargarFacturas(List<Parametro> criterios)
         {
             

@@ -104,5 +104,10 @@ namespace AutomotrizBackend.Servicios.Implementaciones
         {
             return oDao.CargarFacturas(criterios);
         }
+
+        public List<Cliente> GetClientesFiltros(List<Parametro> criterios)
+        {
+            return oDao.CargarClientesFiltro(criterios);
+        }
     }
 }

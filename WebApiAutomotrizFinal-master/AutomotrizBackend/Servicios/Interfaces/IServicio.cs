@@ -23,6 +23,7 @@ namespace AutomotrizBackend.Servicios.Interfaces
         List<FacConsulta> GetFactura(List<Parametro> criterios);
         List<Autopartes> GetAutopartesFiltros(List<Parametro> criterios);
         List<Vehiculo> GetVehiculosFiltros(List<Parametro> criterios);
+        List<Cliente> GetClientesFiltros(List<Parametro> criterios);
         bool CrearCliente(Cliente c);
         bool PostFacturacionVehiculo(Facturas f);
         bool CrearVehiculo(Vehiculo v);
