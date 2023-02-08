@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.btnPersonas = new System.Windows.Forms.Button();
             this.btnConsulta = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.panelSubmenuVehi = new System.Windows.Forms.Panel();
@@ -48,6 +49,8 @@
             this.btnInicio = new System.Windows.Forms.Button();
             this.lblPass = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
+            this.btnVendedores = new System.Windows.Forms.Button();
+            this.btnClientes = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelSubmenuVehi.SuspendLayout();
             this.panelSubmenuAuto.SuspendLayout();
@@ -61,6 +64,9 @@
             // 
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.panelSideMenu.Controls.Add(this.btnVendedores);
+            this.panelSideMenu.Controls.Add(this.btnClientes);
+            this.panelSideMenu.Controls.Add(this.btnPersonas);
             this.panelSideMenu.Controls.Add(this.btnConsulta);
             this.panelSideMenu.Controls.Add(this.btnSalir);
             this.panelSideMenu.Controls.Add(this.panelSubmenuVehi);
@@ -72,9 +78,27 @@
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(286, 753);
+            this.panelSideMenu.Size = new System.Drawing.Size(638, 1055);
             this.panelSideMenu.TabIndex = 7;
             this.panelSideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSideMenu_Paint);
+            // 
+            // btnPersonas
+            // 
+            this.btnPersonas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPersonas.FlatAppearance.BorderSize = 0;
+            this.btnPersonas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPersonas.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPersonas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnPersonas.Location = new System.Drawing.Point(0, 513);
+            this.btnPersonas.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPersonas.Name = "btnPersonas";
+            this.btnPersonas.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnPersonas.Size = new System.Drawing.Size(638, 60);
+            this.btnPersonas.TabIndex = 7;
+            this.btnPersonas.Text = "Personas";
+            this.btnPersonas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPersonas.UseVisualStyleBackColor = true;
+            this.btnPersonas.Click += new System.EventHandler(this.btnPersonas_Click_1);
             // 
             // btnConsulta
             // 
@@ -83,11 +107,11 @@
             this.btnConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsulta.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnConsulta.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnConsulta.Location = new System.Drawing.Point(0, 461);
+            this.btnConsulta.Location = new System.Drawing.Point(0, 453);
             this.btnConsulta.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnConsulta.Size = new System.Drawing.Size(286, 60);
+            this.btnConsulta.Size = new System.Drawing.Size(638, 60);
             this.btnConsulta.TabIndex = 6;
             this.btnConsulta.Text = "Consulta Factura";
             this.btnConsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -100,11 +124,11 @@
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSalir.Location = new System.Drawing.Point(0, 689);
+            this.btnSalir.Location = new System.Drawing.Point(0, 991);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnSalir.Size = new System.Drawing.Size(286, 64);
+            this.btnSalir.Size = new System.Drawing.Size(638, 64);
             this.btnSalir.TabIndex = 5;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -117,10 +141,10 @@
             this.panelSubmenuVehi.Controls.Add(this.btnModificarV);
             this.panelSubmenuVehi.Controls.Add(this.btnConsultarV);
             this.panelSubmenuVehi.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubmenuVehi.Location = new System.Drawing.Point(0, 302);
+            this.panelSubmenuVehi.Location = new System.Drawing.Point(0, 294);
             this.panelSubmenuVehi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelSubmenuVehi.Name = "panelSubmenuVehi";
-            this.panelSubmenuVehi.Size = new System.Drawing.Size(286, 159);
+            this.panelSubmenuVehi.Size = new System.Drawing.Size(638, 159);
             this.panelSubmenuVehi.TabIndex = 4;
             this.panelSubmenuVehi.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSubmenuVehi_Paint);
             // 
@@ -135,7 +159,7 @@
             this.btnFactura.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnFactura.Name = "btnFactura";
             this.btnFactura.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnFactura.Size = new System.Drawing.Size(286, 53);
+            this.btnFactura.Size = new System.Drawing.Size(638, 53);
             this.btnFactura.TabIndex = 1;
             this.btnFactura.Text = "Facturar Vehiculo";
             this.btnFactura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -153,7 +177,7 @@
             this.btnModificarV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnModificarV.Name = "btnModificarV";
             this.btnModificarV.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnModificarV.Size = new System.Drawing.Size(286, 51);
+            this.btnModificarV.Size = new System.Drawing.Size(638, 51);
             this.btnModificarV.TabIndex = 2;
             this.btnModificarV.Text = "Insertar Vehiculo";
             this.btnModificarV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -171,7 +195,7 @@
             this.btnConsultarV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnConsultarV.Name = "btnConsultarV";
             this.btnConsultarV.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnConsultarV.Size = new System.Drawing.Size(286, 53);
+            this.btnConsultarV.Size = new System.Drawing.Size(638, 53);
             this.btnConsultarV.TabIndex = 0;
             this.btnConsultarV.Text = "Consultar";
             this.btnConsultarV.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -184,11 +208,11 @@
             this.btnVehiculos.FlatAppearance.BorderSize = 0;
             this.btnVehiculos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVehiculos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnVehiculos.Location = new System.Drawing.Point(0, 242);
+            this.btnVehiculos.Location = new System.Drawing.Point(0, 234);
             this.btnVehiculos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnVehiculos.Name = "btnVehiculos";
             this.btnVehiculos.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnVehiculos.Size = new System.Drawing.Size(286, 60);
+            this.btnVehiculos.Size = new System.Drawing.Size(638, 60);
             this.btnVehiculos.TabIndex = 3;
             this.btnVehiculos.Text = "Vehiculos ";
             this.btnVehiculos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -200,10 +224,10 @@
             this.panelSubmenuAuto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.panelSubmenuAuto.Controls.Add(this.btnConsultarA);
             this.panelSubmenuAuto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubmenuAuto.Location = new System.Drawing.Point(0, 193);
+            this.panelSubmenuAuto.Location = new System.Drawing.Point(0, 185);
             this.panelSubmenuAuto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelSubmenuAuto.Name = "panelSubmenuAuto";
-            this.panelSubmenuAuto.Size = new System.Drawing.Size(286, 49);
+            this.panelSubmenuAuto.Size = new System.Drawing.Size(638, 49);
             this.panelSubmenuAuto.TabIndex = 2;
             // 
             // btnConsultarA
@@ -216,7 +240,7 @@
             this.btnConsultarA.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnConsultarA.Name = "btnConsultarA";
             this.btnConsultarA.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.btnConsultarA.Size = new System.Drawing.Size(286, 53);
+            this.btnConsultarA.Size = new System.Drawing.Size(638, 59);
             this.btnConsultarA.TabIndex = 0;
             this.btnConsultarA.Text = "Consultar";
             this.btnConsultarA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -234,7 +258,7 @@
             this.btnAutopartes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAutopartes.Name = "btnAutopartes";
             this.btnAutopartes.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btnAutopartes.Size = new System.Drawing.Size(286, 60);
+            this.btnAutopartes.Size = new System.Drawing.Size(638, 52);
             this.btnAutopartes.TabIndex = 1;
             this.btnAutopartes.Text = "Autopartes    ";
             this.btnAutopartes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -248,7 +272,7 @@
             this.panelIcono.Location = new System.Drawing.Point(0, 0);
             this.panelIcono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelIcono.Name = "panelIcono";
-            this.panelIcono.Size = new System.Drawing.Size(286, 133);
+            this.panelIcono.Size = new System.Drawing.Size(638, 133);
             this.panelIcono.TabIndex = 1;
             // 
             // pictureBox1
@@ -267,10 +291,10 @@
             this.panelForms.BackColor = System.Drawing.Color.LemonChiffon;
             this.panelForms.Controls.Add(this.groupBox1);
             this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForms.Location = new System.Drawing.Point(286, 0);
+            this.panelForms.Location = new System.Drawing.Point(638, 0);
             this.panelForms.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelForms.Name = "panelForms";
-            this.panelForms.Size = new System.Drawing.Size(1296, 753);
+            this.panelForms.Size = new System.Drawing.Size(944, 1055);
             this.panelForms.TabIndex = 1;
             // 
             // groupBox1
@@ -283,11 +307,11 @@
             this.groupBox1.Controls.Add(this.lblPass);
             this.groupBox1.Controls.Add(this.txtPass);
             this.groupBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(6, 0);
+            this.groupBox1.Location = new System.Drawing.Point(3, 0);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(1600, 804);
+            this.groupBox1.Size = new System.Drawing.Size(1603, 804);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Iniciar sesion";
@@ -352,6 +376,40 @@
             this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPass.UseSystemPasswordChar = true;
             // 
+            // btnVendedores
+            // 
+            this.btnVendedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.btnVendedores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVendedores.FlatAppearance.BorderSize = 0;
+            this.btnVendedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVendedores.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnVendedores.Location = new System.Drawing.Point(0, 624);
+            this.btnVendedores.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnVendedores.Name = "btnVendedores";
+            this.btnVendedores.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnVendedores.Size = new System.Drawing.Size(638, 53);
+            this.btnVendedores.TabIndex = 8;
+            this.btnVendedores.Text = "Facturar Vehiculo";
+            this.btnVendedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVendedores.UseVisualStyleBackColor = false;
+            // 
+            // btnClientes
+            // 
+            this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.btnClientes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnClientes.Location = new System.Drawing.Point(0, 573);
+            this.btnClientes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.btnClientes.Size = new System.Drawing.Size(638, 51);
+            this.btnClientes.TabIndex = 9;
+            this.btnClientes.Text = "Insertar Vehiculo";
+            this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClientes.UseVisualStyleBackColor = false;
+            // 
             // FrmInicioSesion
             // 
             this.AcceptButton = this.btnInicio;
@@ -359,7 +417,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LemonChiffon;
-            this.ClientSize = new System.Drawing.Size(1582, 753);
+            this.ClientSize = new System.Drawing.Size(1582, 1055);
             this.Controls.Add(this.panelForms);
             this.Controls.Add(this.panelSideMenu);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -401,5 +459,8 @@
         private Label lblPass;
         private TextBox txtPass;
         public Button btnConsulta;
+        public Button btnPersonas;
+        private Button btnVendedores;
+        private Button btnClientes;
     }
 }

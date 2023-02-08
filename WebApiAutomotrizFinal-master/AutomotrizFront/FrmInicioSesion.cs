@@ -28,6 +28,7 @@ namespace AutomotrizFront
             btnAutopartes.Enabled = false;
             btnVehiculos.Enabled = false;
             btnConsulta.Enabled = false;
+            btnPersonas.Enabled = false;
 
             groupBox1.Show();
 
@@ -53,6 +54,8 @@ namespace AutomotrizFront
         {
             panelSubmenuAuto.Visible = false;
             panelSubmenuVehi.Visible = false;
+            btnClientes.Visible = false;
+            btnVendedores.Visible = false;
         }
         private void ocultarSubmenu()
         {
@@ -63,6 +66,14 @@ namespace AutomotrizFront
             if (panelSubmenuVehi.Visible == true)
             {
                 panelSubmenuVehi.Visible = false;
+            }
+            if(btnClientes.Visible == true)
+            {
+                btnClientes.Visible=false;
+            }
+            if (btnVendedores.Visible == true)
+            {
+                btnVendedores.Visible = false;
             }
         }
         private void mostrarSubmenu(Panel submenu)
@@ -75,6 +86,20 @@ namespace AutomotrizFront
             else
             {
                 submenu.Visible = false;
+            }
+        }
+        private void mostrarBotones()
+        {
+            if(btnClientes.Visible == false && btnVendedores.Visible==false)
+            {
+                ocultarSubmenu();
+                btnClientes.Visible = true;
+                btnVendedores.Visible = true;
+            }
+            else
+            {
+                btnClientes.Visible = false;
+                btnVendedores.Visible = false;
             }
         }
         private void panelSideMenu_Paint(object sender, PaintEventArgs e)
@@ -174,6 +199,7 @@ namespace AutomotrizFront
                             btnVehiculos.Enabled = true;
                             btnAutopartes.Enabled = true;
                             btnConsulta.Enabled = true;
+                            btnPersonas.Enabled = true;
                             groupBox1.Hide();
                             break;
                         }
@@ -222,6 +248,11 @@ namespace AutomotrizFront
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPersonas_Click_1(object sender, EventArgs e)
+        {
+            mostrarBotones();
         }
     }
 }
