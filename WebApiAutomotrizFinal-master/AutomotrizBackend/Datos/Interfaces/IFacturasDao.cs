@@ -21,6 +21,7 @@ namespace AutomotrizBackend.Datos.Interfaces
         List<Autopartes> CargarAutopartesFiltros(List<Parametro> criterios);
         List<Autopartes> CargarAutopartes();
         List<Vehiculo> CargarVehiculosFiltros(List<Parametro> criterios);
+        
         bool CrearCliente(Cliente c);
         bool AltaVehiculo(Facturas f);
         bool CrearVehiculo(Vehiculo v);
