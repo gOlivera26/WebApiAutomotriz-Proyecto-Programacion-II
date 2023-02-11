@@ -260,5 +260,11 @@ namespace AutomotrizFront
             ocultarSubmenu();
             abrirFormulario(new frmClientes());
         }
+
+        private void btnVendedores_Click(object sender, EventArgs e)
+        {
+            ocultarSubmenu();
+            abrirFormulario(new frmVendedores());
+        }
     }
 }

@@ -98,6 +98,7 @@
             this.btnVendedores.Text = "Vendedores";
             this.btnVendedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVendedores.UseVisualStyleBackColor = false;
+            this.btnVendedores.Click += new System.EventHandler(this.btnVendedores_Click);
             // 
             // btnClientes
             // 
