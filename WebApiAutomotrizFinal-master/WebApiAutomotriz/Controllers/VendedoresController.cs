@@ -3,6 +3,7 @@ using AutomotrizBackend.Servicios;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using AutomotrizBackend.Dominio;
+using AutomotrizBackend.Datos;
 
 namespace WebApiAutomotriz.Controllers
 {
@@ -29,6 +30,14 @@ namespace WebApiAutomotriz.Controllers
                 return BadRequest("No se pudo completar la accion");
             }
         }
-    
+        [HttpPost("/vendedorFiltro")]
+        public IActionResult GetVendedorFiltro(List<Parametro> lst)
+        {
+            if (lst == null || lst.Count == 0)
+                return BadRequest("Se requiere una lista de parametros");
+
+            return Ok(oServicio.GetVendedorFiltros(lst));
+        }
+
     }
 }

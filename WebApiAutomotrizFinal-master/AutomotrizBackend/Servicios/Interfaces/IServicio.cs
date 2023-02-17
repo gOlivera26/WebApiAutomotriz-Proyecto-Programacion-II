@@ -24,6 +24,7 @@ namespace AutomotrizBackend.Servicios.Interfaces
         List<Autopartes> GetAutopartesFiltros(List<Parametro> criterios);
         List<Vehiculo> GetVehiculosFiltros(List<Parametro> criterios);
         List<Cliente> GetClientesFiltros(List<Parametro> criterios);
+        List<Vendedor> GetVendedorFiltros(List<Parametro> criterios);
         bool CrearCliente(Cliente c);
         bool PostFacturacionVehiculo(Facturas f);
         bool CrearVehiculo(Vehiculo v);

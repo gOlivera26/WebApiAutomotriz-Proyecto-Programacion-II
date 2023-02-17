@@ -31,6 +31,14 @@
             this.btnConsultarTodos = new System.Windows.Forms.Button();
             this.lblHero = new System.Windows.Forms.Label();
             this.dgvVendedores = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.numVentas = new System.Windows.Forms.NumericUpDown();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.lblApellido = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.btnConsultarFiltro = new System.Windows.Forms.Button();
             this.ColID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,14 +48,7 @@
             this.ColTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColNroDoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColBarrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.numVentas = new System.Windows.Forms.NumericUpDown();
-            this.txtApellido = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblTipo = new System.Windows.Forms.Label();
-            this.lblApellido = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.btnConsultarFiltro = new System.Windows.Forms.Button();
+            this.ColVentas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVendedores)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numVentas)).BeginInit();
@@ -91,7 +92,8 @@
             this.ColEmail,
             this.ColTelefono,
             this.ColNroDoc,
-            this.ColBarrio});
+            this.ColBarrio,
+            this.ColVentas});
             this.dgvVendedores.Location = new System.Drawing.Point(155, 371);
             this.dgvVendedores.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvVendedores.Name = "dgvVendedores";
@@ -100,77 +102,6 @@
             this.dgvVendedores.RowTemplate.Height = 24;
             this.dgvVendedores.Size = new System.Drawing.Size(971, 205);
             this.dgvVendedores.TabIndex = 17;
-            // 
-            // ColID
-            // 
-            this.ColID.HeaderText = "ColID";
-            this.ColID.MinimumWidth = 10;
-            this.ColID.Name = "ColID";
-            this.ColID.ReadOnly = true;
-            this.ColID.Visible = false;
-            // 
-            // ColNombre
-            // 
-            this.ColNombre.FillWeight = 107.3084F;
-            this.ColNombre.HeaderText = "Nombre";
-            this.ColNombre.MinimumWidth = 6;
-            this.ColNombre.Name = "ColNombre";
-            this.ColNombre.ReadOnly = true;
-            // 
-            // ColApellido
-            // 
-            this.ColApellido.FillWeight = 107.3084F;
-            this.ColApellido.HeaderText = "Apellido";
-            this.ColApellido.MinimumWidth = 6;
-            this.ColApellido.Name = "ColApellido";
-            this.ColApellido.ReadOnly = true;
-            // 
-            // ColCalle
-            // 
-            this.ColCalle.FillWeight = 107.3084F;
-            this.ColCalle.HeaderText = "Calle";
-            this.ColCalle.MinimumWidth = 6;
-            this.ColCalle.Name = "ColCalle";
-            this.ColCalle.ReadOnly = true;
-            // 
-            // ColAltura
-            // 
-            this.ColAltura.FillWeight = 56.14973F;
-            this.ColAltura.HeaderText = "Altura";
-            this.ColAltura.MinimumWidth = 15;
-            this.ColAltura.Name = "ColAltura";
-            this.ColAltura.ReadOnly = true;
-            // 
-            // ColEmail
-            // 
-            this.ColEmail.HeaderText = "Email";
-            this.ColEmail.MinimumWidth = 6;
-            this.ColEmail.Name = "ColEmail";
-            this.ColEmail.ReadOnly = true;
-            // 
-            // ColTelefono
-            // 
-            this.ColTelefono.FillWeight = 107.3084F;
-            this.ColTelefono.HeaderText = "Telefono";
-            this.ColTelefono.MinimumWidth = 6;
-            this.ColTelefono.Name = "ColTelefono";
-            this.ColTelefono.ReadOnly = true;
-            // 
-            // ColNroDoc
-            // 
-            this.ColNroDoc.FillWeight = 107.3084F;
-            this.ColNroDoc.HeaderText = "Documento";
-            this.ColNroDoc.MinimumWidth = 6;
-            this.ColNroDoc.Name = "ColNroDoc";
-            this.ColNroDoc.ReadOnly = true;
-            // 
-            // ColBarrio
-            // 
-            this.ColBarrio.FillWeight = 107.3084F;
-            this.ColBarrio.HeaderText = "Barrio";
-            this.ColBarrio.MinimumWidth = 6;
-            this.ColBarrio.Name = "ColBarrio";
-            this.ColBarrio.ReadOnly = true;
             // 
             // groupBox1
             // 
@@ -254,6 +185,84 @@
             this.btnConsultarFiltro.UseVisualStyleBackColor = true;
             this.btnConsultarFiltro.Click += new System.EventHandler(this.btnConsultarFiltro_Click);
             // 
+            // ColID
+            // 
+            this.ColID.HeaderText = "ColID";
+            this.ColID.MinimumWidth = 10;
+            this.ColID.Name = "ColID";
+            this.ColID.ReadOnly = true;
+            this.ColID.Visible = false;
+            // 
+            // ColNombre
+            // 
+            this.ColNombre.FillWeight = 107.3084F;
+            this.ColNombre.HeaderText = "Nombre";
+            this.ColNombre.MinimumWidth = 6;
+            this.ColNombre.Name = "ColNombre";
+            this.ColNombre.ReadOnly = true;
+            // 
+            // ColApellido
+            // 
+            this.ColApellido.FillWeight = 107.3084F;
+            this.ColApellido.HeaderText = "Apellido";
+            this.ColApellido.MinimumWidth = 6;
+            this.ColApellido.Name = "ColApellido";
+            this.ColApellido.ReadOnly = true;
+            // 
+            // ColCalle
+            // 
+            this.ColCalle.FillWeight = 107.3084F;
+            this.ColCalle.HeaderText = "Calle";
+            this.ColCalle.MinimumWidth = 6;
+            this.ColCalle.Name = "ColCalle";
+            this.ColCalle.ReadOnly = true;
+            // 
+            // ColAltura
+            // 
+            this.ColAltura.FillWeight = 56.14973F;
+            this.ColAltura.HeaderText = "Altura";
+            this.ColAltura.MinimumWidth = 15;
+            this.ColAltura.Name = "ColAltura";
+            this.ColAltura.ReadOnly = true;
+            // 
+            // ColEmail
+            // 
+            this.ColEmail.HeaderText = "Email";
+            this.ColEmail.MinimumWidth = 6;
+            this.ColEmail.Name = "ColEmail";
+            this.ColEmail.ReadOnly = true;
+            // 
+            // ColTelefono
+            // 
+            this.ColTelefono.FillWeight = 107.3084F;
+            this.ColTelefono.HeaderText = "Telefono";
+            this.ColTelefono.MinimumWidth = 6;
+            this.ColTelefono.Name = "ColTelefono";
+            this.ColTelefono.ReadOnly = true;
+            // 
+            // ColNroDoc
+            // 
+            this.ColNroDoc.FillWeight = 107.3084F;
+            this.ColNroDoc.HeaderText = "Documento";
+            this.ColNroDoc.MinimumWidth = 6;
+            this.ColNroDoc.Name = "ColNroDoc";
+            this.ColNroDoc.ReadOnly = true;
+            // 
+            // ColBarrio
+            // 
+            this.ColBarrio.FillWeight = 107.3084F;
+            this.ColBarrio.HeaderText = "Barrio";
+            this.ColBarrio.MinimumWidth = 6;
+            this.ColBarrio.Name = "ColBarrio";
+            this.ColBarrio.ReadOnly = true;
+            // 
+            // ColVentas
+            // 
+            this.ColVentas.HeaderText = "Cant. Ventas";
+            this.ColVentas.MinimumWidth = 6;
+            this.ColVentas.Name = "ColVentas";
+            this.ColVentas.ReadOnly = true;
+            // 
             // frmVendedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -297,5 +306,6 @@
         private DataGridViewTextBoxColumn ColTelefono;
         private DataGridViewTextBoxColumn ColNroDoc;
         private DataGridViewTextBoxColumn ColBarrio;
+        private DataGridViewTextBoxColumn ColVentas;
     }
 }

@@ -18,6 +18,7 @@ namespace AutomotrizBackend.Dominio
         public double NroTel { get; set; }
         public int NroDoc { get; set; }
         public string Barrio { get; set; }
+        public int CantVentas { get; set; }
 
         public override string ToString()
         {

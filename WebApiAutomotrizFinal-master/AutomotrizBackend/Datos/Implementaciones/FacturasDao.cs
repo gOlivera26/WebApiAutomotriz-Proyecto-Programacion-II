@@ -320,8 +320,55 @@ namespace AutomotrizBackend.Datos.Implementaciones
                 v.NroTel = Convert.ToDouble(dr["nro_tel"]);
                 v.NroDoc = Convert.ToInt32(dr["nro_doc"]);
                 v.Barrio = Convert.ToString(dr["barrio"]);
+                v.CantVentas = Convert.ToInt32(dr["Cant.Ventas"]);
 
                 lst.Add(v);
+            }
+            return lst;
+        }
+
+        public List<Vendedor> CargarVendedoresFiltro(List<Parametro> criterios)
+        {
+            List<Vendedor> lst = new List<Vendedor>();
+            DataTable tabla = new DataTable();
+            SqlConnection cnn = new SqlConnection(@"Data Source=.\SQLEXPRESS01;Initial Catalog=Automotriz_ProgIIDef;Integrated Security=True");
+            try
+            {
+                cnn.Open();
+
+                SqlCommand cmd = new SqlCommand("SP_Consultar_Vendedor_Filtro", cnn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                foreach (Parametro p in criterios)
+                {
+                    if (p.Valor == null)
+                        cmd.Parameters.AddWithValue(p.Clave, DBNull.Value);
+                    else
+                        cmd.Parameters.AddWithValue(p.Clave, p.Valor.ToString());
+                }
+                tabla.Load(cmd.ExecuteReader());
+
+                foreach (DataRow dr in tabla.Rows)
+                {
+                    Vendedor v = new Vendedor();
+                    v.IdVendedor = Convert.ToInt32(dr["id_vendedor"]);
+                    v.Nombre = Convert.ToString(dr["nombre"]);
+                    v.Apellido = Convert.ToString(dr["apellido"]);
+                    v.Calle = Convert.ToString(dr["calle"]);
+                    v.Altura = Convert.ToInt32(dr["altura"]);
+                    v.Email = Convert.ToString(dr["email"]);
+                    v.NroTel = Convert.ToDouble(dr["nro_tel"]);
+                    v.NroDoc = Convert.ToInt32(dr["nro_doc"]);
+                    v.Barrio = Convert.ToString(dr["barrio"]);
+                    v.CantVentas = Convert.ToInt32(dr["Cant.Ventas"]);
+                    lst.Add(v);
+                }
+                cnn.Close();
+
+
+            }
+            catch (Exception)
+            {
+                cnn.Close();
             }
             return lst;
         }

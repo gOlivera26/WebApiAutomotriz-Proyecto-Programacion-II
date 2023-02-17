@@ -109,5 +109,10 @@ namespace AutomotrizBackend.Servicios.Implementaciones
         {
             return oDao.CargarClientesFiltro(criterios);
         }
+
+        public List<Vendedor> GetVendedorFiltros(List<Parametro> criterios)
+        {
+            return oDao.CargarVendedoresFiltro(criterios);
+        }
     }
 }
